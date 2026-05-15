@@ -1,0 +1,84 @@
+﻿@model StudentRepositoryDemo.Models.Student
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-success text-white text-center p-4">
+
+                    <h2 class="fw-bold">
+                        Add New Student
+                    </h2>
+
+                </div>
+
+                <div class="card-body p-5">
+
+                    <form asp-action="Create" method="post">
+
+                        <div class="mb-4">
+
+                            <label class="form-label fw-bold">
+                                Student Name
+                            </label>
+
+                            <input asp-for="Name"
+                                   class="form-control form-control-lg rounded-3" />
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label class="form-label fw-bold">
+                                Course
+                            </label>
+
+                            <input asp-for="Course"
+                                   class="form-control form-control-lg rounded-3" />
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label class="form-label fw-bold">
+                                Age
+                            </label>
+
+                            <input asp-for="Age"
+                                   class="form-control form-control-lg rounded-3" />
+
+                        </div>
+
+                        <div class="d-grid gap-3">
+
+                            <button type="submit"
+                                    class="btn btn-success btn-lg fw-bold rounded-3">
+
+                                Save Student
+
+                            </button>
+
+                            <a asp-action="Index"
+                                   class="btn btn-secondary btn-lg rounded-3">
+
+                                Back To List
+
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
